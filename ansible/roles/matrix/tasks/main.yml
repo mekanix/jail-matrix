@@ -1,0 +1,5 @@
+---
+- name: install matrix packages
+  with_items: "{{ matrix_packages }}"
+  package:
+    name: "{{ item.name }}"
